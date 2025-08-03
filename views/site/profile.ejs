@@ -1,0 +1,45 @@
+<% layout('layout') %>
+    <h1 class="text-center pt-2">Hi, User</h1>
+    <p class="text-center fs-4 text">Here you can see about yourself</p>
+
+    <div class="container py-5">
+    <div class="row justify-content-center">
+      <!-- Sidebar -->
+      <div class="col-md-3 mb-4">
+        <div class="list-group shadow-sm" id="sidebarMenu">
+          <button type="button" class="list-group-item list-group-item-action active" data-section="account">Account info</button>
+          <button type="button" class="list-group-item list-group-item-action" data-section="security">Security</button>
+          <button type="button" class="list-group-item list-group-item-action" data-section="privacy">Privacy</button>
+          <button type="button" class="list-group-item list-group-item-action" data-section="apps">Connected Apps</button>
+          <button type="button" class="list-group-item list-group-item-action">LOG OUT</button>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="col-md-6">
+        <div class="card shadow p-4" id="content-area">
+          <div id="section-account">
+            <h4>Account Information</h4>
+            <div><span class="text-muted">First Name:</span> <b>John</b></div>
+            <div><span class="text-muted">Last Name:</span> <b>Doe</b></div>
+            <div><span class="text-muted">Email:</span> <b>john.doe@example.com</b></div>
+          </div>
+          <div id="section-security" style="display:none;">
+            <h4>Security</h4>
+            <div>Password: ••••••••</div>
+            <div>2FA: Enabled</div>
+          </div>
+          <div id="section-privacy" style="display:none;">
+            <h4>Privacy</h4>
+            <div>Your privacy options...</div>
+          </div>
+          <div id="section-apps" style="display:none;">
+            <h4>Connected Apps</h4>
+            <div>No connected apps</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="/js/main.js"></script>

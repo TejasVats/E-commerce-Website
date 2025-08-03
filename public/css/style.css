@@ -1,0 +1,79 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.card {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-section p {
+  color: #666;
+}
+
+.hero-section .btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.wishlist-icon.active {
+  color: red;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.list-group-item {
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.1rem;
+}
+
+.list-group-item.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card {
+  border-radius: 16px;
+  border: none;
+}
+
+#content-area h4,
+#content-area h2 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+#content-area p,
+#content-area div {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.6rem;
+}

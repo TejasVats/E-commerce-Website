@@ -1,0 +1,71 @@
+<% layout('layout') %>
+    <!-- Header -->
+    <header class="header bg-light shadow-sm">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <div class="logo">
+                    <h1 class="h3 mb-0">YourStore</h1>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="/" class="nav-link px3">Home</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px3">Categories</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px3">Deals</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px3">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions d-flex align-items-center gap-3">
+                    <button class="btn btn-outline-secondary rounded-circle p-2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary rounded-circle p-2" onclick="location.href='profile'">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="btn btn-primary position-relative rounded-circle p-2 cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            id="cart-badge">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main my-5">
+        <div class="container">
+            <div class="page-header mb-4">
+                <h1 class="h2">Shopping Cart</h1>
+                <p id="cart-items-count" class="lead text-muted">0 items in your cart</p>
+            </div>
+
+            <!-- Cart Content -->
+            <div class="cart-layout" id="cart-content"></div>
+
+            <!-- Empty Cart State -->
+            <div class="empty-cart text-center" id="empty-cart" style="display: none;">
+                <div class="empty-cart-content py-5">
+                    <i class="fas fa-shopping-cart empty-cart-icon display-1 text-secondary mb-4"></i>
+                    <h2 class="mb-3">Your cart is empty</h2>
+                    <p class="mb-4">Looks like you haven't added anything to your cart yet.</p>
+                    <button class="btn btn-primary btn-lg" onclick="showProducts()">Start Shopping</button>
+                </div>
+            </div>
+
+            <!-- Recommended Products -->
+            <div class="recommended-products mt-5">
+                <h2 class="mb-4">You might also like</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 products-grid" id="products-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Loading & Toast -->
+    <div class="loading position-fixed top-50 start-50 translate-middle" id="loading" style="display:none;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-container" style="z-index: 1080;"></div>
+
+    <script src="js/main.js"></script>
