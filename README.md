@@ -1,4 +1,3 @@
-# E-commerce-Website
 # E-commerce Website Frontend (Node.js + Express + Bootstrap)
 
 A simple e-commerce frontend website built using **Node.js**, **Express**, and **Bootstrap**. This repository contains static pages, routing setup with Express, and responsive design using Bootstrap CSS.
