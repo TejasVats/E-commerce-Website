@@ -13,8 +13,7 @@ A simple e-commerce frontend website built using **Node.js**, **Express**, and *
 
 - Node.js
 - Express.js
-- Bootstrap 4/5 <!-- Mention the version you used -->
-- <!-- Optional: EJS, Pug, or another template engine if used -->
+- Bootstrap 4/5 <!-- Mention the version you used --> <!-- Optional: EJS, Pug, or another template engine if used -->
 
 ## Getting Started
 
